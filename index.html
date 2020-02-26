@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <h1><u>Daily motivation survey</u></h1>
+        <div class="row">
+            <div class="col50">
+                <label for="fname">Name</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name here">
+                <br>
+            </div>
+            <div class="col50">
+                <label for="email">Age</label>
+                <br>
+                <input type="number" id="email" name="age" placeholder="Enter your age here">
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <label for="sleep">How good was your sleep?</label>
+            <br>
+            <div class="col100">
+                <input type="radio" name="sleep" value="terrible">
+                <label for="terrible">Terrible</label><br>
+                <input type="radio" name="sleep" value="female">
+                <label for="ok ">Ok</label><br>
+                <input type="radio" name="sleep" value="other">
+                <label for="good">Good</label><br>
+            </div>
+        </div>
+        <div class="row">
+            <label for="motivation">What would you appreciate doing the most?</label>
+            <br>
+            <select id="response">
+            <option value="unsure">Not sure</option>
+            <option value="focus">Getting things done</option>
+            <option value="life">Enjoying my day</option>
+            </select>
+            <br>
+            <label for="intention">Set an intention for yourself(optional)</label>
+            <br>
+            <textarea name="intention" rows="10" cols="30">
+            </textarea>
+            <br>
+        </div>
+        <div class="row">
+            <button type="button" disabled="disabled">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
